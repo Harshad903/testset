@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #111;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      color: #ff1e1e;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff1e1e;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #1a1a1a, #000000);
+      padding: 0 2rem;
+    }
+
+    header h2 {
+      font-size: 4rem;
+      color: #ff1e1e;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    section {
+      padding: 6rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #ff1e1e;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 12px;
+      border-left: 4px solid #ff1e1e;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 1rem;
+      background: #222;
+      border: none;
+      color: #eee;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 1rem;
+      background: #ff1e1e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #cc0000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>F1 Garage</h1>
+    <div>
+      <a href="#about">About</a>
+      <a href="#cars">Cars</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <div>
+      <h2>F1 Car Portfolio</h2>
+      <p>Welcome to the world of speed, precision, and technology — where passion meets engineering.</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a motorsport enthusiast with a deep admiration for Formula 1 technology and design. This portfolio showcases my favorite cars, concepts, and insights from the world of F1 — all without using a single image.
+    </p>
+  </section>
+
+  <section id="cars">
+    <h2>F1 Cars & Concepts</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Ferrari SF90 Concept</h3>
+        <p>Powered by hybrid V6, the SF90 marked a bold move toward innovation and aggressive aerodynamics.</p>
+      </div>
+      <div class="card">
+        <h3>Mercedes W11</h3>
+        <p>A dominant force in the 2020 season, featuring DAS (dual-axis steering) and unrivaled corner stability.</p>
+      </div>
+      <div class="card">
+        <h3>Red Bull RB19</h3>
+        <p>Known for its high rake design and Newey's aerodynamic mastery, the RB19 remains a fan favorite.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 F1 Garage | Crafted without images, powered by imagination.</p>
+  </footer>
+
+</body>
+</html>
